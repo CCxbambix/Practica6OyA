@@ -1,0 +1,94 @@
+\documentclass{article}
+
+%Paquetes
+\PassOptionsToPackage{table,dvipsnames,x11names}{xcolor}
+\usepackage[spanish]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{textcomp} 
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{twemojis}
+\usepackage{logix}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{float}
+\usetikzlibrary{calc,positioning,matrix}
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%Documento
+\begin{document}
+  \begin{titlepage}
+  	\vspace*{0.8cm}
+  	\centering
+  	{\bfseries\huge Universidad Nacional Autónoma de México \par}
+  	\vspace{1cm}
+  	{\scshape\huge Facultad de Ciencias \par}
+  	\vspace{2cm}
+  	{\scshape\Huge Práctica 06 \par}
+  	\vfill
+		{\scshape\Large Coprocesador y punto flotante \par}
+  	\vspace{1.5cm}
+  	{\scshape\Large Organización y Arquitectura de Computadoras \par}
+  	\vfill
+  	{\scshape\Large Semestre: 2026-1\par}
+  	\vspace{1.5cm}
+		{\Large Fecha de entrega: 30 de Octubre de 2025\par}
+		\vspace{1.5cm}
+		{\Large Integrantes del equipo:\par}
+		\begin {itemize}
+		\item Monroy Flores Alexa Sofía
+		\item Salazar Enríquez Luis Alberto
+		\end{itemize}
+  \end{titlepage}
+
+	\newgeometry{left=1.8cm, right=2cm, top=2.8cm, bottom=2.4cm}
+	\pagestyle{fancy}
+	\fancyhead[RO,L]{\textbf{\makebox[\textwidth][r]{\ensuremath{\OutlineCurvedDiamond}Práctica 6\ensuremath{\LoopArrowRight}Monroy Flores\ensuremath{\parallel}Salazar Enriquez}}}
+	\section*{Preguntas}
+	\begin{enumerate}
+    \item \textbf{¿Porque las operaciones de flotantes no tienen numero inmediato?}\\
+    \item \textbf{Cuando tenemos un numero doble guardado a lo largo de 2 registros, ¿Que datos guarda cada registro?}\\
+    \item \textbf{En MARS, en la barra de herramientas, en la pestaña de Tools, existe la herramienta llamada MIPS X-Ray, conecta esta herramienta y corre un programa linea por linea. ¿Que significan los números resaltados de color magenta, verde, azul y azul claro que se encuentran abajo de la instrucción?}
+    \begin{itemize}
+      \item magenta: es "opcode" que es el codigo de operación que se va a realizar
+      \item verde: es "rs" es el registro destino 
+      \item azul: es "rt" que es es registro destino
+      \item azul claro: es immediate o valor inmediato
+    \end{itemize}
+  \end{enumerate}
+  \section*{Notas de ejercicios}
+    \begin{itemize}
+      \item \textbf{Ejercicio 1} imagen del codigo que al rato pongo, me falta comentarlo lol
+      \item \textbf{Ejercicio 4}\\
+        ¿El resultado es el mismo? No, esto debido a que en preisición doble o double si da un resultado bien, mientras que en preisción simple o float no da un resultado concreto, da como resultado "Infinity", esto a causa que el resultado es demasiado grande que llega a un desbordamiento de memoria.
+    \end{itemize}
+	\restoregeometry
+\end{document}

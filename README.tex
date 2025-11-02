@@ -74,19 +74,27 @@
 	\fancyhead[RO,L]{\textbf{\makebox[\textwidth][r]{\ensuremath{\OutlineCurvedDiamond}Práctica 6\ensuremath{\LoopArrowRight}Monroy Flores\ensuremath{\parallel}Salazar Enriquez}}}
 	\section*{Preguntas}
 	\begin{enumerate}
-    \item \textbf{¿Porque las operaciones de flotantes no tienen numero inmediato?}\\
+    \item \textbf{¿Porque las operaciones de flotantes no tienen número inmediato?}\\
+		Por que al ser números representados en punto flotante, pierden precisión en los dígitos que los componen debido a que su representación en binario puede
+		no ser exacta, haciendo que las operaciones entre ellos no tengan un número inmediato.
     \item \textbf{Cuando tenemos un numero doble guardado a lo largo de 2 registros, ¿Que datos guarda cada registro?}\\
+		En el primer registro se guardan los primeros 32 bits del double que son los más representativos conteniendo el signo, exponente y la parte alta de la mantisa, 
+		mientras que en el segundo registro se guardan los 32 bits restantes del número, conteniendo el resto o parte baja de la mantisa.
     \item \textbf{En MARS, en la barra de herramientas, en la pestaña de Tools, existe la herramienta llamada MIPS X-Ray, conecta esta herramienta y corre un programa linea por linea. ¿Que significan los números resaltados de color magenta, verde, azul y azul claro que se encuentran abajo de la instrucción?}
     \begin{itemize}
-      \item magenta: es "opcode" que es el codigo de operación que se va a realizar
-      \item verde: es "rs" es el registro destino 
-      \item azul: es "rt" que es es registro destino
-      \item azul claro: es immediate o valor inmediato
+      \item Magenta: es "opcode" que es el codigo de operación que se va a realizar.
+      \item Verde: es "rs" es el registro destino.
+      \item Azul: es "rt" que es es registro destino.
+      \item Azul claro: es immediate o valor inmediato.
     \end{itemize}
   \end{enumerate}
   \section*{Notas de ejercicios}
     \begin{itemize}
-      \item \textbf{Ejercicio 1} imagen del codigo que al rato pongo, me falta comentarlo lol
+      \item \textbf{Ejercicio 1}
+	  	\begin{figure} [H]
+			\centering \includegraphics[width=0.6\textwidth]{leibniz.png}
+    		\caption{Fragmento de código de Java de la serie de Leibniz}
+		\end{figure}
       \item \textbf{Ejercicio 4}\\
         ¿El resultado es el mismo? No, esto debido a que en preisición doble o double si da un resultado bien, mientras que en preisción simple o float no da un resultado concreto, da como resultado "Infinity", esto a causa que el resultado es demasiado grande que llega a un desbordamiento de memoria.
     \end{itemize}
